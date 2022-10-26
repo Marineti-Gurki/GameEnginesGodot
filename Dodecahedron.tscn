@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Dodecahedron.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+vertex_color_use_as_albedo = true
+
+[node name="MeshInstance" type="MeshInstance"]
+transform = Transform( 0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
